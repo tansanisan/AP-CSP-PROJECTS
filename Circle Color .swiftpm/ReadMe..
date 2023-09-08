@@ -1,0 +1,10 @@
+Burda tekrardan degistirmek istedigim variablelari @State yazdim ki mutablr olsunlar. 
+
+sonradan bir rectangle ve circle buyuklugunu belirlemek icin .frame kullandim
+position belirlemek icin .position kullandim 
+
+bu dairelerimin renklerini degistirmek icin de bir button yarattim. bu buttonda @State define ettigim variable = .red\.. herhangi bir color diyerekte renklerin degismesini sagladim. 
+
+ex:  Button("Purple") {
+                secondCircleColor = .purple
+                firstCircleColor =  .purple
