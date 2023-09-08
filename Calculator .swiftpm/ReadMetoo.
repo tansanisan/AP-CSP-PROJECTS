@@ -1,0 +1,26 @@
+Burda da basta calculatoruma direk hem button hem label yapamadigim icin direk iki tane textField yeri acip, sayi girip hesaplanacak bir makine yaptim. 
+
+Bunu yapmak icin 3 tane @State variable tanimladim, bu ucu cunku degisip, update olacaklar (kisi degistirdigi sure boyunca)
+onlarida : String = "" -->boyle yaparak bos biraktim ki ilk kod calistiginda icleri bos olsun
+
+ TextField("Enter Your Value 1" , text : $Div1)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(30)
+
+--Sonradan bu kodu kullanarak sayisini girdigim variablein (textfield icerisine) onu $ isareti ile bind ettimki bu sayede girilen text ve @State variable update olsun. 
+Bunun ayni kodunu ikinci variable icinde girdim. 
+
+sonunda bir button yarattim calculate diye, bu button islevi eger benim birinci sayim bir sayiya esitse (aynisi diger variable icinde gecerli) o zaman +, -, x, / yapabilitsin dedim. 
+
+ Button("Calculate") {
+                
+                
+                
+                if let number1 = Float(Div1), let number2 = Float(Div2) {
+                    let Division = number1 / number2
+                    
+                    Res4 = String(Division)           
+
+                  Res4 bizim sonucumuz oluyor, if let sayesinde iki tane variableimizin dogru olup olmadigini check etti.
+
+                  bu kodu dar her dort islem icin kullandim. 
