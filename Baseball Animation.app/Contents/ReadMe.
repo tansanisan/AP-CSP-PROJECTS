@@ -1,0 +1,18 @@
+Basketball animationda direk if lerden giderek bir sequence yarattik. 
+
+Bu sequence ilk once @State kullanarak mutable bir variable yarattik ve bunun sayesinde o variable degistirebiliyoruz. 
+sonradan if statementlarda soyle bir mantik yuruttuk: 
+
+   if Img == 1{
+            Image("1")
+                .resizable()
+                .scaledToFit()
+            var Img = 2
+
+eger Img benim 1 e esit olursa o zaman bana assetlerimde olan Image 1 i ver ve sonucunda img =2 olarak tanimladigim asset ver 
+--> son seklide buton ile yaptik
+
+   Button("Play") {
+                    Img += 1
+
+burada da her button bastigimizda Img olarak belirttigimiz variable incrementledik bu sayede sequence yarattik. 
