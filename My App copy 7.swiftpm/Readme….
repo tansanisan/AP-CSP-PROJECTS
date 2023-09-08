@@ -1,0 +1,10 @@
+Bu su ana dek yaptigim en sacma seydi cunku amele isi. Bunu yapabilmek icin bir function yazabiliyor olmam gerekiyordu, ancak yazamadim so enayi yontemi ;
+
+Path() { path in 
+                
+                path.move(to: CGPoint(x: 68.7746827672824, y: 135.6085612899174))
+          path.addLine(to: CGPoint(x: 85.7293902332723, y: 46.9681608536889))
+
+        sadece bu frame kullanarak butun bir resmi cikardim, ancak app'in icine tam olarak sigmadi -- o nasil daha bilmiyoruz. 
+
+Noktalarimi cikarmak icinde yaptigim sey GeoGebraya resmimi koydum ve bir pointerla dogru cizdim -- bitis ve baslangic noktalari ilede butun resmi cikardim.
