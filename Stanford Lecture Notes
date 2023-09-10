@@ -1,0 +1,49 @@
+Lecture #1 
+
+Burada basic seyler ogrendik, 
+
+:View nedir -- behaves like a view 
+      * senin ana ekraninda gorecegin screen yapiyorsun oyle dusun. 
+      * bunun altinda var body: some View{ --> something that behaves like a view
+      * boylece we display things inside, input + output in screen.
+
+***  struct CardView : View {
+        var isFaceUp : Bool = false
+        var body : some View { --> burada ek olarak ekraninda variable tanimladiginda var body ustunde olmali! 
+        every var has to have a value -->  var isFaceUp : Bool = false (senin value burada Bool = false olmasi)
+*** .stroke , .font ... --> bunlarda bir function, view modify etmeni sagliyor. 
+
+***👩‍💻 Bu videodan en onemli sey (bu emoji temsil ediyor)
+    : eger birden fazla bir obje yaratmak istiyorsan, ContentView {} bulundugu yerde bir tane daha view struct ediyorsun! Bu view senin kullanacagin kodu anlatiyor
+    :struct CardView olan kisim
+    :    var body: some View {
+        HStack {
+            CardView(isFaceUp: false)
+            CardView(isFaceUp: false)
+            CardView(isFaceUp: true)
+            CardView(isFaceUp: true)
+        }
+                .foregroundColor(.pink)
+                .padding()
+       
+    }
+    
+    struct CardView : View {
+        var isFaceUp : Bool = true
+        var body : some View {
+           
+            ZStack(content: {
+                if isFaceUp{
+                    RoundedRectangle(cornerRadius: 12.0)
+                        .foregroundColor(.white)
+                    RoundedRectangle(cornerRadius: 12.0)
+                        .strokeBorder(lineWidth: 2)
+                    Text("😍").font(.largeTitle)
+                }
+                else {
+                    RoundedRectangle(cornerRadius: 12.0)
+                        .foregroundColor(.pink)
+                }
+
+Bu kodda kartlarin bir yuzunun acik-kapali olmasi icinde sunu yaptik: 
+  --> eger senin kartin icinde emoji bulunduran ve ici beyazsa acik kalsin, ancak degilse onu pembe (kapa) dedik. Sonra Yukarida ContentView( asil kullanicinin gorecegi alan) CardView icine hangisinin dogru/yanlis oldugunu yazdik. 
