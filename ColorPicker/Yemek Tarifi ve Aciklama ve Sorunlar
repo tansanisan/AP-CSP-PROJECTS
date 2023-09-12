@@ -1,0 +1,19 @@
+Yemek Tarifi: 
+
+Yapmam gerekenler--
+
+1) Kucuk rectanglelar eklemek ve iclerinde assetlerimin rengi olacak
+2)opacity ve saturation ekleyecegim (en kucuk ve buyuk degerlerine bak) -- bunlar icin iki tane @State private var , ve renk icinde variable tanimla = String koy 
+3)renk sayisi fazla oldugu icin scroll koy 
+4) hepsinde cok yazmamak icin belirli bir struct daha yaz contentview oldugu sayfaya ve direk belirledigin ismi copy-pastele. 
+
+
+Aciklama: 
+
+Ben bu projede 15 tane color olusturdum, assetlerden. Sonradan bu renklerin renklerini degistirmek icin bir opacity digeri ise saturation olacak sekilde iki tane renk degistirici ekledim. Bu iki value sayesinde kullanici arzu ettigi rengin opakligini degistirebilir, rengi koyultup acabilir. button koymak yerine slider koyarak oyle renk degistirilmesini sagladim.  
+
+Sorunlar: 
+
+Colorpickerlarda oldugu gibi nasil tonlarca value ekleyecegimi bulamadim, bu yuzden bir struct olusturup ondan gittim.
+15inci colorumdan sonra extra arguman verdi o yuzden ekleme yapamadim. 
+Sliderlarimin yanina kullanicinin 0-1 olacak sekilde slideri kaydirdigini gosterdigi value koyamadim. 
