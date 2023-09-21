@@ -1,0 +1,20 @@
+I basically followed the same process as I did in 4 calculation, the only difference which is the creativity is that as the user enters his/her's values into textfield those numbers will be multiplied and returned as morse numbers!
+
+
+   func convertToMorseCode(_ number: Int) -> String {
+        let morseCodeDictionary: [Int: String] = [
+            0: "-----",
+            1: ".----",
+            2: "..---",
+            3: "...--",
+            4: "....-",
+            5: ".....",
+            6: "-....",
+            7: "--...",
+            8: "---..",
+            9: "----."
+        ]
+
+The function takes an integer number (for example, 123) 
+and converts it into its corresponding Morse code representation by looking up each digit in 
+the morseCodeDictionary. In this case, 123 would be converted to ".---- ..--- ...--" based on the dictionary.
