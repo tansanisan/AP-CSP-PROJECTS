@@ -1,0 +1,80 @@
+import SwiftUI
+
+struct ContentView: View {
+    @State private var firstValue = ""
+    @State private var secondValue = ""
+    @State private var product = 0
+    @State private var morseCode = ""
+    
+    var body: some View {
+        VStack {
+            Text("Multiply and Convert to Morse Code")
+                .font(.title)
+            
+            HStack {
+                TextField("Enter first value", text: $firstValue)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.numberPad)
+                
+                TextField("Enter second value", text: $secondValue)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.numberPad)
+            }
+            .padding()
+            
+            Button(action: {
+                calculateAndConvertToMorseCode()
+            }) {
+                Text("Calculate & Convert")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            
+            Text("Product: \(product)")
+                .font(.title)
+            
+            Text("Morse Code: \(morseCode)")
+                .font(.title)
+                .padding()
+        }
+        .padding()
+    }
+    
+    func calculateAndConvertToMorseCode() {
+        if let first = Int(firstValue), let second = Int(secondValue) {
+            product = first * second
+            morseCode = convertToMorseCode(product)
+        } else {
+           
+            product = 0
+            morseCode = "Invalid Input"
+        }
+    }
+    
+    func convertToMorseCode(_ number: Int) -> String {
+        let morseCodeDictionary: [Int: String] = [
+            0: "-----",
+            1: ".----",
+            2: "..---",
+            3: "...--",
+            4: "....-",
+            5: ".....",
+            6: "-....",
+            7: "--...",
+            8: "---..",
+            9: "----."
+        ]
+        
+        var morseCode = ""
+        let digits = String(number)
+        
+        for digit in digits {
+            if let digitValue = Int(String(digit)), let morseSymbol = morseCodeDictionary[digitValue] {
+                morseCode += morseSymbol + " "
+            }
+        }
+    }
+    
+    }
