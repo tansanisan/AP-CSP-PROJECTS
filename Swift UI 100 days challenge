@@ -1,0 +1,28 @@
+variables, constants, strings, and numbers
+1) : variables + constants
+var -- enables you to store data and modify it
+Ex: 
+var name = "Tansa
+name = "Ahmet"
+name = "Nil" -- by using var you can use different data for the same variable, since you're modifying it! The old value(s) are discarded. 
+
+let -- not changable, it's a constant but again used for storing data
+ex: let movie = "godfather" -- as long as you're using "movie" the computer will display your data: godfather
+
+2) : strings 
+to display something in " " we use strings
+Ex: Text("Hello World") -- is a string which the computer will display the text: Hello World
+extra: .count - will give you the number of letters , """ -- if you have mutliple line data you use """ 
+ex: let prog = """ I 
+                   am
+                   CSing
+                         """
+3) : numbers
+ to show big numbers (1000000) -- we use underscore to see the numbers better
+ var counter = 20
+ counter += 5 -- will give you the number 25 , you can apply this to all x, +, -, / and more
+ let number = 100 , print(number.ismultiple(of: 2) -- T/F tells you if it's an factor or not 
+ for storing decimals (floating numbers) in some cases you have to identify or you'll have roundoff eror 
+                          ex: let a = 1
+                              let b = 2.3 
+                              let c = a + Int(b) or Double(a) + b -- or else the answer will be different 
