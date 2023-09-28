@@ -1,0 +1,91 @@
+The UI -- parametrizable shell that the model (logic + data) feeds and brings to life
+The model -- where things like isFaceUp and countCard would live (not in @State in te UI)
+
+Connecting model to UI 
+    1) the model could just be an @State in a view (almost no sep)
+    2) only accesible via a gatekeeper "View Model" class (full sep, MVVM)
+    3) there's a class, but the Model is still directly accs.( partial sep)
+
+    -- we usually use #2
+    --the choice depends on the complexity of the model
+     for option #2 -- if the model is made up of SQL  + structs(s)
+     for option #1 -- simple piece of data and little to no logic 
+     for option ## -- something in between
+
+     MVVM (connects the Model to UI) -- Model-View-ViewModel
+
+     The model -- UI independent 
+               -- Data + logic 
+               --The truth -- to know about data, info etc you use model
+               from model to view data flows 
+    The view -- reflects the model stateless (just showing you whats happening)
+             -- declared (the data is derived from here, you declare what's going to happen 
+             and model will extract that)
+
+  The ViewModel -- binds view to model interpreter
+                -- gatekeeper (protector)
+                --interpreter -- allows for control 
+                control by the model to view: model - viewmodel : notices change it then publishes " something changed"        
+              this is going to trigger view which automatically observes publications, pulls data, and rebuilds.
+              other way around: calls intent function, viewModel will modify the View. 
+              the only  thing that changes is the interpreter. 
+
+
+
+              Struct + classes
+struct: value type -- storage data, knowledge, 
+--everytime a code is written it is copied when passed or assigned 
+-- copy on write --> you know when or what is changed 
+--functional programming -- provability 
+--no inheritance 
+-- init initializers all vars
+
+class : reference stype -- pointer out data
+-- your data will be passed around via pointers.
+-- object0orienting programming
+-- in heritance (single, limiting)
+--init initialiazes no vars ( so we usally write init all the time since it does initiliase var)
+-- always mutable
+
+
+
+
+
+ViewModel -- having too many views 
+-- you want to have  a pointer to the shared View Model
+--It has walls up that  are protecting the Model, right, that's its whole  
+
+generics -- type paramter ( you can use any type you want)
+
+ex: array 
+
+protocols -- stripped down struct/class
+--to specify the behavior of a struct, class, or enum to say what we're capable of
+-- it has functions, but no implementation (storage)
+-- only description -- describing behaviour
+--it's a type (type of a var or a return type)
+-- do not need to reveal what sort of struct or class they are
+
+functions -- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
