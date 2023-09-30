@@ -1,0 +1,30 @@
+//
+//  ContentView.swift
+//  celcius to fahrenheit
+//
+//  Created by Tansa Nisan Gunerhan on 30.09.2023.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            var x : Double =  40
+            let FahFor =  (9*x)/5 + 32
+          
+    Text(" Here's the answer : \(FahFor) ")
+         
+            
+        }
+        .padding()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+-- Celcius to Fahrenheit code -- summary of day two 
+-- \(FahFor) let's the computer to display this variable 
