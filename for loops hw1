@@ -1,0 +1,35 @@
+import SwiftUI
+
+struct ContentView: View {
+    
+    let names = ["tansa", "ahmet", "nil", "sedat", "berk", "ceren", "kami"]
+    
+
+    
+    var body: some View {
+        VStack {
+          
+            for i in names { --> burada direk hem isimleri soyluyor hemde emoji ile gosteriyor
+                Text("This cs-ci \(i) is crazy!")
+                for j in names {
+                    Text (" \(j) 😶‍🌫️" )
+                }
+            }
+            for k in 1...9 { --> 1 den 9 (not inclu) 2 ile carpiyor 
+                    Text( "Multiplication by 2 \(2 * k) is : " )
+            
+        }
+        
+        for i in names { --> isimleri teker teker display ediyor
+            Text (\(i))
+        }
+    }
+}
+
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
