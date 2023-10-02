@@ -1,0 +1,35 @@
+Game Name : Barbie Doll 
+
+name --> input 
+height --> inout 
+weight --> input 
+bmi = weight/ (height)^2 
+
+if ( weight < 60  and height > 165) {
+ print (maybe ok /(name))
+ print( Image:system name ...) 
+
+}
+else { 
+print ( "fatso")
+ print( Image:system name 
+ prtint( komik text)
+
+for i in supoerdoll > functiondan alacak 
+prtint (bmi)
+  if bmi < 18.5 
+  print(you're a doll baby girl) 
+  Imagesytem(....
+  print( agency names)
+
+  for j in superdoll 
+  print ( bmi yes you're okay 
+
+  else{ 
+
+  print( " you can't catwalk")
+  imagesystem(...)
+  print("motivational letter koy)
+
+
+func superdoll (name , height, weight) 
