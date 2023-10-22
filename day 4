@@ -1,0 +1,25 @@
+burada sunu ogreniyoruz ki bizim bir seyleri tanimlarken, ya da ilerleyen codelarda kullanacagimiz varible/let type belirtmemiz lazim 
+  onun icin ck basic bir yazim sekli var : 
+
+var happy : String = ""
+  (burada variable icine yazacagim seyin string oldunu soyluyorum)
+  var numbers :Int = 0
+    (burada varialbe icine yazacagim seyin integer oldugunun haberini veriyorum, baslangicim 0 yaptim)
+
+    ornekler : 
+
+let surname: String = "Gunerhan"
+var score: Int = 0
+  var albums: [String] = ["Red", "Fearless"] -- > burada arrayimin icine tuttugumun typeini belirtiyorum 
+    var teams: [String] = [String]() --> burada empty bir array yaptim, input konuldugunda string giriliyor diye 
+
+      cunku 
+
+      let score: Int = "Zero" --> swift senin boyle bir sey yapmana izin vermiyor. 
+        diyor ki eger bana boyle bir sey yaparsan eror veririm. 
+        bu structure sayesinde user ne yazmasi gerektigini daha rahat biliyor. 
+        ayrica codu yazan icin hatirlatma oluyor ona gore degisimler yapabilir, 
+ornegin, 
+textfield da .numberFormatter var 
+  bunun sayesinde text field yazilacak seyin sadece integer olmasi saglaniyor
+  arraylere, normal single seylere oldugu gibi setlere de bunu yapabiliriz. 
