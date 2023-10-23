@@ -25,7 +25,7 @@ They provide type safety and enable you to avoid code duplication.
 Generics are denoted by placeholders like T, U, or any custom name, and they represent the actual types used at runtime.
 
 
-Numeric Type Conversion 
+Numeric Type Conversion:
 
 - Type conversion is the process of changing one numeric data type to another.
 - Swift enforces type safety, so you must explicitly convert types when working with different numeric types.
@@ -78,7 +78,7 @@ Counting Characters:
 - Useful for tasks like checking the length of a user's input, validating passwords, and truncating text.
 
 
-Accessing and Modifying a String in Swift:
+Accessing and Modifying a String:
 
 You can access individual characters in a string by using subscript notation, e.g., myString[index].
 Strings in Swift are 0-indexed.
@@ -112,7 +112,7 @@ Dictionaries:
 - Dictionaries are commonly used to represent mappings, associations, or lookup tables.
 
 
-Associated Values in Swift:
+Associated Values:
 
 - Associated values are a feature of Swift's enumerations (enums).
 - They allow enums to have additional data associated with each case.
@@ -129,7 +129,7 @@ Structures and Enumerations as Value Types:
 - Value types contrast with reference types (e.g., classes), which are shared by reference.
 - Structures and enums are often used to model data, small objects, or value-like entities.
 
-Modifying Value Types in Instance Methods in Swift:
+Modifying Value Types in Instance Methods:
 
 - Value types, such as structures and enumerations, are copied when passed to methods.
 - To modify a value type from within an instance method, you must mark the method as `mutating`.
@@ -137,7 +137,7 @@ Modifying Value Types in Instance Methods in Swift:
 - It's essential for altering the state of a value type instance, ensuring changes are propagated.
 - Methods that don't modify the instance can omit the `mutating` keyword.
 
-Type Methods in Swift:
+Type Methods:
 
 - Type methods are methods that are associated with the type itself, rather than with instances of the type.
 - They are defined using the `static` keyword for classes or the `static` or `class` keyword for structures and enumerations.
@@ -145,7 +145,7 @@ Type Methods in Swift:
 - They can access and modify type-level properties but not instance properties.
 - Type methods are a way to encapsulate behavior or provide utility functions at the type level.
 
-Customizing Initialization in Swift:
+Customizing Initialization:
 
 - In Swift, you can customize the initialization process for your custom classes and structures.
 - You do this by defining your own custom initializers.
@@ -155,6 +155,67 @@ Customizing Initialization in Swift:
 - Swift provides designated initializers, convenience initializers, and initializer delegation to help manage initialization for your types.
 
 
+Nil-Coalescing Operator:
+
+- The nil-coalescing operator, `??`, is used to provide a default value when dealing with optionals.
+- It allows you to choose a fallback value if an optional is `nil`.
+- The operator evaluates the left-hand side (optional) and returns its value if it's not `nil`, or the right-hand side (default) value if the optional is `nil`.
+- It simplifies handling optionals and provides a default behavior in case of `nil`.
+- Commonly used to provide safe and default values for optionals.
 
 
+Accessing and Modifying a String:
 
+- You can access individual characters in a string using subscript notation, e.g., `myString[index]`.
+- Strings in Swift are 0-indexed, meaning the first character is at index 0.
+- To append or modify a string, you can use the `+` operator or the `+=` operator.
+- Use string methods like `append()` to add characters to the end of a string.
+- To replace substrings, you can use methods like `replacingOccurrences(of: with:)`.
+- Remember that strings in Swift are immutable, so any modification creates a new string, leaving the original string unchanged.
+
+Computed Properties:
+
+- Computed properties are a type of property in Swift that don't store a value directly but provide a getter and an optional setter.
+- They allow you to compute a value dynamically whenever it's accessed.
+- The getter is used to retrieve the computed value, while the setter is used to modify it.
+- Computed properties are declared using `var`, and their value is calculated based on other properties, methods, or external data.
+- They are useful for encapsulating and abstracting complex calculations or transformations in your code.
+- Computed properties offer a way to make data access appear like a simple property while performing calculations behind the scenes.
+
+
+Setting a Default Property Value with a Closure or Function:
+
+- In Swift, you can set default values for properties using a closure or a function.
+- A closure or function can calculate and provide the initial property value when the instance is initialized.
+- This approach is especially useful when the default value is dependent on some logic or external data.
+- The closure or function is executed when the property is first accessed, and the result is stored as the property's value.
+- It allows you to defer the computation of the default value until it's actually needed.
+- By using a closure or function, you can make properties more flexible and dynamic, accommodating various scenarios for initialization.
+
+Optional Chaining:
+
+- Optional chaining is a Swift feature that allows you to access properties, methods, and subscripts of an optional that might currently be `nil`.
+- It provides a safe and concise way to work with optionals without causing runtime crashes.
+- You use the `?` operator to chain property, method, or subscript calls on an optional. If the optional is `nil`, the entire chain gracefully fails and returns `nil`.
+- It's particularly useful when working with nested optionals and optional properties of objects.
+- Optional chaining simplifies the process of handling optionals, making your code more robust and less prone to runtime errors.
+
+
+Extensions:
+
+- Extensions are a Swift feature that allows you to add new functionality to existing types, including classes, structures, enumerations, and protocols.
+- You can extend types from the standard library, as well as custom types defined in your code.
+- Extensions enable you to add methods, computed properties, initializers, and even conform to protocols to existing types without modifying their original source code.
+- They enhance code modularity and readability by organizing related functionality into separate extensions.
+- Extensions are widely used for retroactive modeling and adapting types to conform to new protocols or requirements.
+- They can be used to break down large types into smaller, more manageable pieces and keep the codebase clean and organized.
+
+
+Protocols:
+
+- Protocols define a blueprint of methods, properties, and requirements that a type must adhere to.
+- A protocol declares a set of methods and properties without implementing them. Conforming types provide their own implementations.
+- Types, including classes, structures, and enumerations, can adopt and conform to one or more protocols.
+- Protocols enable polymorphism by allowing objects of different types to be treated uniformly if they conform to the same protocol.
+- They promote code reuse, modularity, and maintainability by defining a common interface for diverse types.
+- Protocol-oriented programming is a key aspect of Swift, encouraging composition and flexibility in software design.
