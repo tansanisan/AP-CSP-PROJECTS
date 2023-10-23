@@ -1,0 +1,33 @@
+1) if statement 
+  -- bunu zaten onceden ogrenmistik, bir condition koyarak kodu execute ediyoruz 
+  Ex: 
+
+var let name = "Tansa" 
+  if name == Tansa {
+  print("welcome"
+        }
+        else name {
+          print("you're not welcome")
+
+            buradaki kodda eger ismin tansa ise welcome yaziyor, degilse ise welcome degilsin. 
+
+2) Multiple if statement 
+              --burada if leri birlestirmeyi, nested yapmayi ogreniyoruz :
+
+              var color = "blue"
+              var color2 = "red"
+          
+
+              if color == "blue" {
+              print("bad color")
+                else if color2 == "red" {
+                print("fine color")
+              else  {
+                  print ("yuck") 
+                    Burada diyoruz ki eger rengin mavi ise kotu bir renk, eger kirmiziysa iyi, ikisinden biri yoksa iyy dedik. 
+
+                      var age = 2
+                      var height = 150
+
+                      if age = 2 && height = 150 -- and kullandik ayni anda iki condition bakiyor ya da || or derdik, bu da ikisini aynianda ama and gibi sert degil t or f ise cevap true mesela, and ise false olurdy
+                      print("pretty")
