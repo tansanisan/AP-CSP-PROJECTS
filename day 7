@@ -1,0 +1,34 @@
+1) functions 
+data bastraction sagliyor, bir kodu elli milyon kere yazmak yerine biz cok kisa bir sekilde bir kere yazip, bu functionu cagirabiliyoruz : 
+
+func printTimesTables(number: Int, end: Int) {
+    for i in 1...end {
+        print("\(i) x \(number) is \(i * number)")
+    }
+}
+
+printTimesTables(number: 5, end: 20)
+
+  mesela burada bir islem tanimladik, artik bir dahakine farkli sayilar ile yapmak istedigimizde tek yapacagimiz en alttaki kodu yazmak olacak.
+
+
+  2) parameter 
+func printTimesTables(number: Int, end: Int) -> Int{
+    for i in 1...end {
+        print("\(i) x \(number) is \(i * number)")
+    }
+
+    burada func sonra parantez olan yer parametre oluyor, orada iste diyorsun ki bu parametleri alip islem yapacagim, type belirtki bilgisayar ne alacagini bilsin, 
+    oradaki ok da sana hangi type ta return edecegini soyluyor, eger ben Boolean yazsaydim, true / false gibi return ederdi. 
+
+  3) return values 
+
+
+      return ise direk kodunda yazdigin bir seyi execute ettiginde almak icin kullaniyorsun, genellikle birden fazla satir kodun oldugunda kullaniyorsun. 
+
+        we use the return statement in functions or methods to return the values based on our requirements. By using return keyword we 
+        can return values from functions/methods based on our requirements in 
+        swift programming language.
+
+    
+  
