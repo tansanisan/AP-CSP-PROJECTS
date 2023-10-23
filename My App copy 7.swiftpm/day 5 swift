@@ -31,3 +31,28 @@ var let name = "Tansa"
 
                       if age = 2 && height = 150 -- and kullandik ayni anda iki condition bakiyor ya da || or derdik, bu da ikisini aynianda ama and gibi sert degil t or f ise cevap true mesela, and ise false olurdy
                       print("pretty")
+
+
+3) switch 
+
+-- burada tek olan sey else if kullanmamak yerine switch ve case kullaniyoruz : 
+
+switch place {
+case "Gotham":
+    print("You're Batman!")
+case "Mega-City One":
+    print("You're Judge Dredd!")
+case "Wakanda":
+    print("You're Black Panther!")
+default:
+    print("Who are you?")
+
+
+4) tenary conditional 
+
+burada daha rahat sekilde check saglaniyor: 
+
+let age = 18
+let canVote = age >= 18 ? "Yes" : "No"
+
+direk tanimlanana age 18 buyuk ya da esitse sana bunu yes degilse no ediyor. 
