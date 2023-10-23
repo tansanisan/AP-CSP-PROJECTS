@@ -1,0 +1,38 @@
+1) loops 
+  burada iteration oluyor, mesela bir array var ve icindeki butun her seyi execute etmek istiyorsun. O zaman for loop kullaniyoruz 
+
+    ex: let platforms = ["iOS", "macOS", "tvOS", "watchOS"]
+
+for os in platforms {
+    print("Swift works great on \(os).")
+
+      burada os senin array icindeki element represent ediyor, print dede diyorki bu yazan yazida hepsinin oldugu sekilde execute et == yani 4 kere ayni yazi ancak arraylar 
+        icindeki elementler ile yazilacak. -- bir nevi data abstraction 
+
+        bir de while loop var : 
+
+        var countdown = 10
+
+while countdown > 0 {
+    print("\(countdown)…")
+    countdown -= 1
+}
+
+print("Blast off!")
+
+  burdada belli bir sayim belirliyorsun ve diyorsun ki benim count um bu olana dek itirate et, repeat until gibi dusun 
+
+    contiue ve break de var 
+
+    let filenames = ["me.jpg", "work.txt", "sophie.jpg", "logo.psd"]
+
+for filename in filenames {
+    if filename.hasSuffix(".jpg") == false {
+        continue (or) break
+    }
+
+    print("Found picture: \(filename)")
+
+
+      burada continue dediginde su oluyor, false oldugu surece devam et, true olunca dur 
+        burada break dediginde ise false execute ettigi an kod duracak demek oluyor
