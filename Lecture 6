@@ -12,7 +12,7 @@ var isFaceUp: Bool {
 There’s also a didSet (inside that one, oldValue is what the value used to be).
 
 Simply add a .animation(Animation) view modifier to the View you want to auto-animate.
-Text(“�”)
+Text(“”)
  .opacity(scary ? 1 : 0)
  .rotationEffect(Angle.degrees(upsideDown ? 180 : 0))
  .animation(Animation.easeInOut) 
@@ -22,7 +22,7 @@ Now whenever scary or upsideDown changes, the opacity/rotation will be animated.
 ZStack {
  if isFaceUp {
  RoundedRectangle()s // default .transition is .opacity
- Text(“�”).transition(.scale)
+ Text(“”).transition(.scale)
  } else {
  RoundedRectangle(cornerRadius: 10).transition(.identity)
  }
