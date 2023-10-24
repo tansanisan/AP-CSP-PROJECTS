@@ -1,0 +1,33 @@
+var isFaceUp: Bool {
+ willSet {
+ if newValue {
+ startUsingBonusTime()
+ } else {
+ stopUsingBonusTime()
+ }
+ }
+}
+
+--> Inside here, newValue is a special variable (the value it’s going to get set to).
+There’s also a didSet (inside that one, oldValue is what the value used to be).
+
+Simply add a .animation(Animation) view modifier to the View you want to auto-animate.
+Text(“�”)
+ .opacity(scary ? 1 : 0)
+ .rotationEffect(Angle.degrees(upsideDown ? 180 : 0))
+ .animation(Animation.easeInOut) 
+--> Swift could infer the Animation. part, of course
+Now whenever scary or upsideDown changes, the opacity/rotation will be animated.
+
+ZStack {
+ if isFaceUp {
+ RoundedRectangle()s // default .transition is .opacity
+ Text(“�”).transition(.scale)
+ } else {
+ RoundedRectangle(cornerRadius: 10).transition(.identity)
+ }
+} 
+
+--> If isFaceUp changed (while ZStack is on screen and an explicit animation is in progress) …
+… to false, the back would appear instantly, Text would shrink to nothing, front RR fade out.
+… to true, the back would disappear instantly, Text grow in from nothing, front RR fade in
