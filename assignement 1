@@ -219,3 +219,20 @@ Protocols:
 - Protocols enable polymorphism by allowing objects of different types to be treated uniformly if they conform to the same protocol.
 - They promote code reuse, modularity, and maintainability by defining a common interface for diverse types.
 - Protocol-oriented programming is a key aspect of Swift, encouraging composition and flexibility in software design.
+
+Autoclosure: 
+
+An autoclosure is a Swift feature that allows you to delay the evaluation of an expression until it is actually needed. 
+It's commonly used as a parameter attribute for function arguments, allowing you to pass a piece of code that gets executed 
+lazily when the function is called. This can be useful for optimizing performance and improving code 
+readability, especially when working with conditional or short-circuiting logic. Autoclosures are 
+indicated by the @autoclosure attribute in Swift, and they are often used in Swift's standard library and in 
+various APIs to create more concise and efficient code.
+
+Opaque Types:
+
+- Opaque types are a feature introduced in Swift 5.1.
+- They allow you to hide implementation details of a type while providing a known interface.
+- Opaque types are defined using the `some` keyword.
+- They're useful for returning values with abstract types, such as protocols, while preserving type safety.
+- Opaque types enhance code abstraction and make code easier to understand and maintain.
