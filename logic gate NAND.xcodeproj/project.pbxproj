@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5614AD42AEE3B8D00199A1A /* logic_gate_NANDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5614AD32AEE3B8D00199A1A /* logic_gate_NANDApp.swift */; };
+		A5614AD62AEE3B8D00199A1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5614AD52AEE3B8D00199A1A /* ContentView.swift */; };
+		A5614AD82AEE3B9000199A1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5614AD72AEE3B9000199A1A /* Assets.xcassets */; };
+		A5614ADB2AEE3B9000199A1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5614ADA2AEE3B9000199A1A /* Preview Assets.xcassets */; };
+		A5614AE62AEE3B9000199A1A /* logic_gate_NANDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5614AE52AEE3B9000199A1A /* logic_gate_NANDTests.swift */; };
+		A5614AF02AEE3B9000199A1A /* logic_gate_NANDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5614AEF2AEE3B9000199A1A /* logic_gate_NANDUITests.swift */; };
+		A5614AF22AEE3B9000199A1A /* logic_gate_NANDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5614AF12AEE3B9000199A1A /* logic_gate_NANDUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5614AE22AEE3B9000199A1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5614AC82AEE3B8D00199A1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5614ACF2AEE3B8D00199A1A;
+			remoteInfo = "logic gate NAND";
+		};
+		A5614AEC2AEE3B9000199A1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5614AC82AEE3B8D00199A1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5614ACF2AEE3B8D00199A1A;
+			remoteInfo = "logic gate NAND";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5614AD02AEE3B8D00199A1A /* logic gate NAND.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "logic gate NAND.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5614AD32AEE3B8D00199A1A /* logic_gate_NANDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logic_gate_NANDApp.swift; sourceTree = "<group>"; };
+		A5614AD52AEE3B8D00199A1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5614AD72AEE3B9000199A1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5614ADA2AEE3B9000199A1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5614ADC2AEE3B9000199A1A /* logic_gate_NAND.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = logic_gate_NAND.entitlements; sourceTree = "<group>"; };
+		A5614AE12AEE3B9000199A1A /* logic gate NANDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "logic gate NANDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5614AE52AEE3B9000199A1A /* logic_gate_NANDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logic_gate_NANDTests.swift; sourceTree = "<group>"; };
+		A5614AEB2AEE3B9000199A1A /* logic gate NANDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "logic gate NANDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5614AEF2AEE3B9000199A1A /* logic_gate_NANDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logic_gate_NANDUITests.swift; sourceTree = "<group>"; };
+		A5614AF12AEE3B9000199A1A /* logic_gate_NANDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logic_gate_NANDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5614ACD2AEE3B8D00199A1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5614ADE2AEE3B9000199A1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5614AE82AEE3B9000199A1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5614AC72AEE3B8D00199A1A = {
+			isa = PBXGroup;
+			children = (
+				A5614AD22AEE3B8D00199A1A /* logic gate NAND */,
+				A5614AE42AEE3B9000199A1A /* logic gate NANDTests */,
+				A5614AEE2AEE3B9000199A1A /* logic gate NANDUITests */,
+				A5614AD12AEE3B8D00199A1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5614AD12AEE3B8D00199A1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5614AD02AEE3B8D00199A1A /* logic gate NAND.app */,
+				A5614AE12AEE3B9000199A1A /* logic gate NANDTests.xctest */,
+				A5614AEB2AEE3B9000199A1A /* logic gate NANDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5614AD22AEE3B8D00199A1A /* logic gate NAND */ = {
+			isa = PBXGroup;
+			children = (
+				A5614AD32AEE3B8D00199A1A /* logic_gate_NANDApp.swift */,
+				A5614AD52AEE3B8D00199A1A /* ContentView.swift */,
+				A5614AD72AEE3B9000199A1A /* Assets.xcassets */,
+				A5614ADC2AEE3B9000199A1A /* logic_gate_NAND.entitlements */,
+				A5614AD92AEE3B9000199A1A /* Preview Content */,
+			);
+			path = "logic gate NAND";
+			sourceTree = "<group>";
+		};
+		A5614AD92AEE3B9000199A1A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A5614ADA2AEE3B9000199A1A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5614AE42AEE3B9000199A1A /* logic gate NANDTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5614AE52AEE3B9000199A1A /* logic_gate_NANDTests.swift */,
+			);
+			path = "logic gate NANDTests";
+			sourceTree = "<group>";
+		};
+		A5614AEE2AEE3B9000199A1A /* logic gate NANDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5614AEF2AEE3B9000199A1A /* logic_gate_NANDUITests.swift */,
+				A5614AF12AEE3B9000199A1A /* logic_gate_NANDUITestsLaunchTests.swift */,
+			);
+			path = "logic gate NANDUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5614ACF2AEE3B8D00199A1A /* logic gate NAND */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5614AF52AEE3B9000199A1A /* Build configuration list for PBXNativeTarget "logic gate NAND" */;
+			buildPhases = (
+				A5614ACC2AEE3B8D00199A1A /* Sources */,
+				A5614ACD2AEE3B8D00199A1A /* Frameworks */,
+				A5614ACE2AEE3B8D00199A1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "logic gate NAND";
+			productName = "logic gate NAND";
+			productReference = A5614AD02AEE3B8D00199A1A /* logic gate NAND.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5614AE02AEE3B9000199A1A /* logic gate NANDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5614AF82AEE3B9000199A1A /* Build configuration list for PBXNativeTarget "logic gate NANDTests" */;
+			buildPhases = (
+				A5614ADD2AEE3B9000199A1A /* Sources */,
+				A5614ADE2AEE3B9000199A1A /* Frameworks */,
+				A5614ADF2AEE3B9000199A1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5614AE32AEE3B9000199A1A /* PBXTargetDependency */,
+			);
+			name = "logic gate NANDTests";
+			productName = "logic gate NANDTests";
+			productReference = A5614AE12AEE3B9000199A1A /* logic gate NANDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5614AEA2AEE3B9000199A1A /* logic gate NANDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5614AFB2AEE3B9000199A1A /* Build configuration list for PBXNativeTarget "logic gate NANDUITests" */;
+			buildPhases = (
+				A5614AE72AEE3B9000199A1A /* Sources */,
+				A5614AE82AEE3B9000199A1A /* Frameworks */,
+				A5614AE92AEE3B9000199A1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5614AED2AEE3B9000199A1A /* PBXTargetDependency */,
+			);
+			name = "logic gate NANDUITests";
+			productName = "logic gate NANDUITests";
+			productReference = A5614AEB2AEE3B9000199A1A /* logic gate NANDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5614AC82AEE3B8D00199A1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A5614ACF2AEE3B8D00199A1A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					A5614AE02AEE3B9000199A1A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A5614ACF2AEE3B8D00199A1A;
+					};
+					A5614AEA2AEE3B9000199A1A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A5614ACF2AEE3B8D00199A1A;
+					};
+				};
+			};
+			buildConfigurationList = A5614ACB2AEE3B8D00199A1A /* Build configuration list for PBXProject "logic gate NAND" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5614AC72AEE3B8D00199A1A;
+			productRefGroup = A5614AD12AEE3B8D00199A1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5614ACF2AEE3B8D00199A1A /* logic gate NAND */,
+				A5614AE02AEE3B9000199A1A /* logic gate NANDTests */,
+				A5614AEA2AEE3B9000199A1A /* logic gate NANDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5614ACE2AEE3B8D00199A1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5614ADB2AEE3B9000199A1A /* Preview Assets.xcassets in Resources */,
+				A5614AD82AEE3B9000199A1A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5614ADF2AEE3B9000199A1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5614AE92AEE3B9000199A1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5614ACC2AEE3B8D00199A1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5614AD62AEE3B8D00199A1A /* ContentView.swift in Sources */,
+				A5614AD42AEE3B8D00199A1A /* logic_gate_NANDApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5614ADD2AEE3B9000199A1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5614AE62AEE3B9000199A1A /* logic_gate_NANDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5614AE72AEE3B9000199A1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5614AF02AEE3B9000199A1A /* logic_gate_NANDUITests.swift in Sources */,
+				A5614AF22AEE3B9000199A1A /* logic_gate_NANDUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5614AE32AEE3B9000199A1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5614ACF2AEE3B8D00199A1A /* logic gate NAND */;
+			targetProxy = A5614AE22AEE3B9000199A1A /* PBXContainerItemProxy */;
+		};
+		A5614AED2AEE3B9000199A1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5614ACF2AEE3B8D00199A1A /* logic gate NAND */;
+			targetProxy = A5614AEC2AEE3B9000199A1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A5614AF32AEE3B9000199A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5614AF42AEE3B9000199A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A5614AF62AEE3B9000199A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "logic gate NAND/logic_gate_NAND.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"logic gate NAND/Preview Content\"";
+				DEVELOPMENT_TEAM = V7M6SMZCS9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tansa-Nisan-Gunerhan.logic-gate-NAND";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A5614AF72AEE3B9000199A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "logic gate NAND/logic_gate_NAND.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"logic gate NAND/Preview Content\"";
+				DEVELOPMENT_TEAM = V7M6SMZCS9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tansa-Nisan-Gunerhan.logic-gate-NAND";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A5614AF92AEE3B9000199A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7M6SMZCS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tansa-Nisan-Gunerhan.logic-gate-NANDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/logic gate NAND.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/logic gate NAND";
+			};
+			name = Debug;
+		};
+		A5614AFA2AEE3B9000199A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7M6SMZCS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tansa-Nisan-Gunerhan.logic-gate-NANDTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/logic gate NAND.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/logic gate NAND";
+			};
+			name = Release;
+		};
+		A5614AFC2AEE3B9000199A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7M6SMZCS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tansa-Nisan-Gunerhan.logic-gate-NANDUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "logic gate NAND";
+			};
+			name = Debug;
+		};
+		A5614AFD2AEE3B9000199A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7M6SMZCS9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tansa-Nisan-Gunerhan.logic-gate-NANDUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "logic gate NAND";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5614ACB2AEE3B8D00199A1A /* Build configuration list for PBXProject "logic gate NAND" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5614AF32AEE3B9000199A1A /* Debug */,
+				A5614AF42AEE3B9000199A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5614AF52AEE3B9000199A1A /* Build configuration list for PBXNativeTarget "logic gate NAND" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5614AF62AEE3B9000199A1A /* Debug */,
+				A5614AF72AEE3B9000199A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5614AF82AEE3B9000199A1A /* Build configuration list for PBXNativeTarget "logic gate NANDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5614AF92AEE3B9000199A1A /* Debug */,
+				A5614AFA2AEE3B9000199A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5614AFB2AEE3B9000199A1A /* Build configuration list for PBXNativeTarget "logic gate NANDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5614AFC2AEE3B9000199A1A /* Debug */,
+				A5614AFD2AEE3B9000199A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5614AC82AEE3B8D00199A1A /* Project object */;
+}
